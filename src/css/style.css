@@ -25,11 +25,19 @@ img {
   }
 }
 
+@media (max-width: 567px) {
+  .container {
+    max-width: 490px;
+    width: 95%;
+  }
+}
+
 .button {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
   padding: 18px 30px;
+  font-weight: bold;
 }
 
 /*импорт стилей шапки*/
@@ -74,12 +82,28 @@ img {
   display: inline-block;
   color: #333333;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: bold;
   text-decoration: none;
   margin-top: 10px;
 }
 
 @media (max-width: 768px) {
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__button {
+    font-size: 12px;
+    padding: 15px 26px;
+  }
+  .navbar__logo {
+    width: 90px;
+  }
+}
+
+@media (max-width: 321px) {
+  .navbar {
+    margin: 5px 10px 0 10px;
+  }
   .navbar__contacts {
     display: none;
   }
