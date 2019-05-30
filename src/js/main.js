@@ -9,3 +9,9 @@ button.addEventListener('click', function(){
 close.addEventListener('click', function(){
   modal.classList.remove('modal_active');
 });
+
+function autoClose(){
+  modal.classList.remove('modal_active');
+}
+
+setInterval(autoClose, 5000);
