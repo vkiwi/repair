@@ -351,7 +351,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  line-height: 1.5;
+  line-height: 24px;
+  font-size: 15px;
 }
 
 .offer__recallMe {
@@ -360,8 +361,9 @@ img {
 
 .offer__recallYourself {
   min-width: 250px;
-  padding-left: 40px;
+  padding-left: 55px;
   font-weight: 400;
+  float: right;
 }
 
 @media (max-width: 1200px) {
