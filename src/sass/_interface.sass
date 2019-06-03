@@ -32,7 +32,8 @@ img
   padding: 90px 0
   &-title
     font-size: 24px
-    .bold
+    text-align: center
+    +bold
     line-height: 35px
   &-subtitle
     display: block
@@ -42,3 +43,7 @@ img
   padding: 20px 26px
   font-size: 15px
   border-radius: 10px
+.arrows
+  &__left, &__right
+    &:hover
+      cursor: pointer
