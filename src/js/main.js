@@ -16,11 +16,11 @@ function autoClose(){
 
 setInterval(autoClose, 5000);
 
-$(document).ready(function(){
-  $('h2').css('border', 'solid 3px red');
-});
+// $(document).ready(function(){
+//   $('h2').css('border', 'solid 3px red');
+// });
 
-// p нет, абзатцев нет на странице
-$(function(){
-  $('p').css('border', 'solid 3px red');
-});
+// // p нет, абзатцев нет на странице
+// $(function(){
+//   $('p').css('border', 'solid 3px red');
+// });

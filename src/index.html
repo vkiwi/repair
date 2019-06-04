@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
+  
 </head>
 <body>
 <nav class="navbar">
@@ -26,7 +28,7 @@
           <a href="tel:+7 (495) 42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
         </div>
         <!-- /.navbar__contacts -->
-        <button class="button navbar__button" id="button">Перезвоните мне</button> <!-- /.button navbar__button -->
+        <button class="button navbar__button wow pulse" id="button">Перезвоните мне</button> <!-- /.button navbar__button -->
       </div>
       <!-- /.navbar__info -->
     </div>
@@ -64,7 +66,7 @@
           </div>
           <!-- /.hero-text -->
           <div class="hero-image">
-            <img class="hero-image__img" src="img/hero/hero-image.png" alt="план квартиры">
+            <img class="hero-image__img wow fadeInRight" src="img/hero/hero-image.png" alt="план квартиры">
           </div>
           <!-- /.hero-image -->
         </div>
@@ -84,7 +86,7 @@
            <form action="" class="form offer__form">
              <input type="text" class="input offer__input" placeholder="Ваше имя">
              <input type="tel" class="input offer__input" placeholder="Ваш телефон">
-             <button class="button offer__button">Получить бесплатный дизайн-проект</button>
+             <button class="button offer__button wow flipInX">Получить бесплатный дизайн-проект</button>
            </form>
            <!-- /.form offer__form -->
            <div class="offer__recall">
@@ -131,6 +133,93 @@
     </section>
     <!-- /.section portfolio -->
 
+    <section class="section price">
+      <div class="container">
+        <h2 class="section-title price__title">У нас очень гибкая система скидок на комплексные работы!</h2>
+        <!-- /.section-title price__title -->
+        <span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
+        <!-- /.section-subtitle price__subtitle -->
+        <div class="cards">
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="card__image"><img src="img/price/bathroom.png" alt=""></div>
+            <!-- /.card__image -->
+            <div class="card__text">
+              <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+              <!-- /.card__title -->
+              <a href="#" class="card__link">Узнать цены</a>
+              <!-- /.card__link -->
+            </div>
+            <!-- /.card__text -->
+          </div>
+          <!-- /.card -->
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
+            <div class="card__image"><img src="img/price/living.png" alt=""></div>
+            <!-- /.card__image -->
+            <div class="card__text">
+              <h4 class="card__title">Ремонт комнат и квартир</h4>
+              <!-- /.card__title -->
+              <a href="#" class="card__link">Узнать цены</a>
+              <!-- /.card__link -->
+            </div>
+            <!-- /.card__text -->
+          </div>
+          <!-- /.card -->
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.3s">
+            <div class="card__image"><img src="img/price/office.png" alt=""></div>
+            <!-- /.card__image -->
+            <div class="card__text">
+              <h4 class="card__title">Отделка офисных помещений</h4>
+              <!-- /.card__title -->
+              <a href="#" class="card__link">Узнать цены</a>
+              <!-- /.card__link -->
+            </div>
+            <!-- /.card__text -->
+          </div>
+          <!-- /.card -->
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.4s">
+            <div class="card__image"><img src="img/price/buildings.png" alt=""></div>
+            <!-- /.card__image -->
+            <div class="card__text">
+              <h4 class="card__title">Ремонт в новостройках</h4>
+              <!-- /.card__title -->
+              <a href="#" class="card__link">Узнать цены</a>
+              <!-- /.card__link -->
+            </div>
+            <!-- /.card__text -->
+          </div>
+          <!-- /.card -->
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.5s">
+            <div class="card__image"><img src="img/price/kitchen.png" alt=""></div>
+            <!-- /.card__image -->
+            <div class="card__text">
+              <h4 class="card__title">Ремонт кухонь</h4>
+              <!-- /.card__title -->
+              <a href="#" class="card__link">Узнать цены</a>
+              <!-- /.card__link -->
+            </div>
+            <!-- /.card__text -->
+          </div>
+          <!-- /.card -->
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.6s">
+            <div class="card__image"><img src="img/price/houses.png" alt=""></div>
+            <!-- /.card__image -->
+            <div class="card__text">
+              <h4 class="card__title">Ремонт дач и коттеджей</h4>
+              <!-- /.card__title -->
+              <a href="#" class="card__link">Узнать цены</a>
+              <!-- /.card__link -->
+            </div>
+            <!-- /.card__text -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.cards -->
+
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section price -->
+
     <!-- /.offer -->
   </main>
 
@@ -154,8 +243,12 @@
   <script src="js/modal.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <!-- <script src="js/slick.min.js"></script> -->
-  <!-- <script src="js/main.js"></script> -->
+  <script src="js/main.js"></script>
+  <script src="js/wow.min.js"></script>
   <script>
+    // инициализация библиотеки wow.js
+    new WOW().init();
+    // скрипт слайдера
       $(document).ready(function() {
         $('.owl-carousel').owlCarousel({
     loop:true,
