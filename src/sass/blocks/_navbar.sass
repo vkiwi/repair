@@ -1,4 +1,5 @@
 .navbar
+  animation: bg-animation 10s ease infinite
   &-block     
     display: flex
     justify-content: space-between
@@ -45,3 +46,11 @@
       padding: 15px 26px
     &__logo
       width: 90px
+      
+@keyframes bg-animation 
+  0% 
+    background-color: $secondary 
+  50%      
+    background-color: $main-color
+  100% 
+    background-color: $secondary 
