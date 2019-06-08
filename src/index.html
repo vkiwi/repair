@@ -413,6 +413,8 @@
 
         // валидация формы
         $('#brif-form').validate({
+          errorClass: "invalid",
+          errorElement: "div",
           rules: {
             username: {
               required: true,
@@ -432,7 +434,10 @@
               required: "Заполните поле",
               minlength: jQuery.validator.format("Осталось ввести символов: {0}")
             },
-            email: "Введите корректный email",
+            email: {
+              required: "Заполните поле",
+              email: jQuery.validator.format("Введите корректный Email")
+            },
             phone: "Заполните поле"
           }
         });
