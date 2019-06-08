@@ -280,6 +280,43 @@
     </section>
     <!-- /.section steps -->
 
+    <section class="section">
+      <div class="advantages__main">
+        <div class="advantages__text">Ремонт обойдется Вам дешевле, так как <br>мы используем качественные материалы по оптовым ценам</div>
+      </div>
+      <div class="container advantages">
+        <div class="advantages-block">
+          <div class="advantages-block__title">Поможем закупить все материалы по оптовым ценам у проверенных поставщиков</div>
+          <!-- /.advantages-block__title -->
+          <div class="advantages-block__image">
+            <img src="img/advantages/advantages1.png" alt="">
+          </div>
+          <!-- /.advantages-block__image -->
+        </div>
+        <!-- /.advantages-block -->
+        <div class="advantages-block">
+          <div class="advantages-block__title">Мы дадим Вам <b class="mybold">максимальные</b> скидки у наших партнеров для закупки материалов оптом</div>
+          <!-- /.advantages-block__title -->
+          <div class="advantages-block__image">
+            <img src="img/advantages/advantages2.png" alt="">
+          </div>
+          <!-- /.advantages-block__image -->
+        </div>
+        <!-- /.advantages-block -->
+        <div class="advantages-block">
+          <div class="advantages-block__title">Все, что не сможете найти в городе - поможем заказать <b class="mybold">у проверенных поставщиков</b></div>
+          <!-- /.advantages-block__title -->
+          <div class="advantages-block__image">
+            <img src="img/advantages/advantages3.png" alt="">
+          </div>
+          <!-- /.advantages-block__image -->
+        </div>
+        <!-- /.advantages-block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section advantages -->
+
     <section class="section brif">
       <div class="container">
         <div class="brif-block">
@@ -338,20 +375,20 @@
                 <img src="img/footer/map-placeholder.png" alt="">
               </span>
               <span class="contacts-list__text">г. Москва <br>
-                ул. Ленина, д. 10, корпус 2, оф. 308</span></li>
+                <b class="mybold">ул. Ленина, д. 10, корпус 2, оф. 308</b></span></li>
             <li class="contacts-list__item">
               <span class="contacts-list__icon">
                 <img src="img/footer/clock-with-white-face.png" alt="">
               </span>
               <span class="contacts-list__text">Режим работы: <br>
-                с 9:00 до 18:00
+                <b class="mybold">с 9:00 до 18:00</b>
                 </span></li>
             <li class="contacts-list__item">
               <span class="contacts-list__icon">
                 <img src="img/footer/phone-call-button.png" alt="">
               </span>
               <span class="contacts-list__text">Телефон:  <br>  
-                <a href="tel:+7(495)42-251-31">+ 7 (495) 42-251-31</a></span></li>
+                <a href="tel:+7(495)42-251-31"><b class="mybold">+ 7 (495) 42-251-31</b></a></span></li>
           </ul>
         </div>
         <!-- /.contacts -->
@@ -392,6 +429,8 @@
 
         // валидация первой формы из блока offer
         $('#offer-form').validate({
+          errorClass: "invalid",
+          errorElement: "div",
           rules: {
             username: {
               required: true,
