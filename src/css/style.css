@@ -419,7 +419,7 @@ img {
 }
 
 .section {
-  padding: 90px 0;
+  padding: 50px 0;
 }
 
 .section-title {
@@ -1272,7 +1272,7 @@ a {
 }
 
 .offer__recallMe {
-  max-width: 350px;
+  max-width: 230px;
 }
 
 .offer__recallYourself {
@@ -1316,11 +1316,14 @@ a {
 .portfolio {
   background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
   background-size: 50%;
+  padding: 100px 0;
 }
 
 .portfolio__title {
+  font-size: 30px;
   margin: auto;
   margin-bottom: 100px;
+  max-width: 800px;
 }
 
 .portfolio__arrows {

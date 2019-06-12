@@ -1,4 +1,4 @@
-var button = document.querySelector('#button')
+var button = document.querySelector('#button');
 var modal = document.querySelector('#modal');
 var close = document.querySelector('#close');
 
