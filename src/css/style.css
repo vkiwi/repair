@@ -423,7 +423,7 @@ img {
 }
 
 .section-title {
-  font-size: 24px;
+  font-size: 30px;
   text-align: center;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
@@ -433,7 +433,7 @@ img {
 
 .section-subtitle {
   display: block;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .input {
@@ -1222,6 +1222,7 @@ a {
 }
 
 .offer__title {
+  font-size: 24px;
   max-width: 350px;
   margin-bottom: 20px;
   font-family: 'Museo Sans Bold', sans-serif;
@@ -1230,6 +1231,7 @@ a {
 }
 
 .offer__subtitle {
+  fonr-size: 16px;
   max-width: 250px;
   margin-bottom: 30px;
 }
@@ -1345,6 +1347,7 @@ a {
 .price__title {
   margin: auto;
   margin-bottom: 58px;
+  max-width: 550px;
 }
 
 .price__subtitle {
@@ -1354,7 +1357,6 @@ a {
 
 .price__card {
   margin-bottom: 30px;
-  margin: auto;
 }
 
 .card {
@@ -1362,6 +1364,7 @@ a {
   border: 1px solid #e8e8e8;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  margin-bottom: 30px;
 }
 
 .card:hover {
@@ -1715,8 +1718,8 @@ a {
 .contacts {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-top: 100px;
-  padding-left: 200px;
+  padding-top: 80px;
+  padding-left: 210px;
 }
 
 .contacts__title {
@@ -1739,6 +1742,10 @@ a {
 .contacts-list {
   padding: 0;
   list-style: none;
+}
+
+.contacts-list__text {
+  line-height: 1.4;
 }
 
 .contacts-list__icon {
