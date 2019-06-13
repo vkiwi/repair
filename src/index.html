@@ -12,10 +12,8 @@
   <!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
   <link rel="stylesheet" href="css/style.css">
   <!-- <link rel="stylesheet" href="css/animate.css"> -->
-  
 </head>
 <body>
-  
   <!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(53970577, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> 
   <noscript><div><img src="https://mc.yandex.ru/watch/53970577" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 <nav class="navbar">
@@ -87,8 +85,12 @@
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
            <!-- /.section-subtitle -->
            <form action="mail.php" method="POST" class="form offer__form" id="offer-form">
-             <input type="text" class="input offer__input" name="user_name" placeholder="Ваше имя">
-             <input type="tel" class="input offer__input phone" name="user_phone" placeholder="Ваш телефон">
+             <div class="offer-input">
+                <input type="text" class="input offer__input" name="user_name" id="inputs" placeholder="Ваше имя">
+             </div>
+             <div class="offer-input">
+                <input type="tel" class="input offer__input phone" name="user_phone" placeholder="Ваш телефон">
+             </div>
              <button type="submit" class="button offer__button wow flipInX">Получить бесплатный дизайн-проект</button>
            </form>
            <!-- /.form offer__form -->
@@ -283,7 +285,7 @@
     <!-- /.section steps -->
 
     <section class="section">
-      <h2></h2>
+      <h2 class="invisibleHeader">Заголовок мать его</h2>
       <div class="advantages__main">
         <div class="advantages__text">Ремонт обойдется Вам дешевле, так как <br>мы используем качественные материалы по оптовым ценам</div>
       </div>
@@ -346,9 +348,15 @@
             <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
             <span class="form__subtitle">Для этого заполните форму ниже</span>
             <form action="mail.php" method="POST" id="brif-form">
-              <input type="text" name="user_name" class="input brif__input" placeholder="Ваше имя">
-              <input type="tel" name="user_phone" class="input brif__input phone" placeholder="Ваш телефон">
-              <input type="email" name="user_email" class="input brif__input" placeholder="Ваш Email">
+              <div class="brif-input">
+                <input type="text" name="user_name" class="input brif__input" placeholder="Ваше имя">
+              </div>
+              <div class="brif-input">
+                <input type="tel" name="user_phone" class="input brif__input phone" placeholder="Ваш телефон">
+              </div>
+              <div class="brif-input">
+                <input type="email" name="user_email" class="input brif__input" placeholder="Ваш Email">
+              </div>
               <button class="button brif__button">Узнать стоимость</button> 
               <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
             </form>
@@ -366,15 +374,9 @@
 
   <footer class="footer">
     <div class="footer-wrap">
-<<<<<<< HEAD
       <div class="map" id="map">
-
+<!-- карта вставляется при докручивании до блока .steps -->
       </div>
-=======
-<!--       <div class="map">
-        <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A77b7da777b7b914974b60677f22834c6abc6dc155c3e364c5b83576b324c1bbd&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
-      </div> -->
->>>>>>> 222f272d22666e10e1d096af3a3d9dca96e4c97b
       <div class="container"> 
         <div class="contacts-block">
           <div class="contacts">
@@ -415,7 +417,7 @@
   <div class="modal" id="modal">
     <div class="modal-dialog">
       <button class="modal-dialog__close" id="close">&times;</button>
-      <h4 class="modal-dialog__title">Всплывающее окно</h4>
+      <h4 class="modal-dialog__title">Пожалуйста заполните форму ниже, нажмите на кнопку <b class="mybold">'Получить бесплатный дизайн-проект'</b> и мы обязательно перезвоним Вам.</h4>
     </div>
     <!-- /.modal-dialog -->
   </div>
@@ -434,8 +436,8 @@
   <script src="js/jquery.maskedinput.min.js"></script>
 
   <script>
-    // инициализация библиотеки wow.js
-    new WOW().init();
+        // инициализация библиотеки wow.js
+        new WOW().init();
     // скрипт слайдера
       $(document).ready(function() {
 
@@ -496,7 +498,7 @@
         // маска для телефона
         $('.phone').mask('+7 (999) 999-99-99');
 
-        // скрипт слайдера
+// скрипт слайдера сова карусель
 //         $('.owl-carousel').owlCarousel({
 //     loop:true,
 //     margin:10,
@@ -514,33 +516,33 @@
 //     }
 // });
       });
-    </script>
+  </script>
 
 <script>
-  $(document).ready(function() {
-    $('.slider').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      prevArrow: $('.arrows__left'),
-      nextArrow: $('.arrows__right'),
-      responsive: [
-      {
-    breakpoint: 1200,
-    settings: {
-      slidesToShow: 2,
-      slidesToScroll: 1
-    }
+        $(document).ready(function() {
+        $('.slider').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          prevArrow: $('.arrows__left'),
+          nextArrow: $('.arrows__right'),
+          responsive: [
+          {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+          },
+          {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
       },
-      {
-    breakpoint: 768,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-  },
-      ]
-    });
-  });
+          ]
+        });
+      });
 </script>
 
 </body>

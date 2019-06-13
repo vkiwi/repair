@@ -474,6 +474,17 @@ img {
   border: 1px solid red;
 }
 
+div.invalid {
+  position: absolute;
+  top: 0;
+  left: 110px;
+  color: red;
+}
+
+.brif div.invalid {
+  left: 150px;
+}
+
 .mybold {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
@@ -482,6 +493,10 @@ img {
 a {
   text-decoration: none;
   color: #333333;
+}
+
+.invisibleHeader {
+  display: none;
 }
 
 .animated {
@@ -1205,6 +1220,15 @@ a {
   position: relative;
 }
 
+.offer-input {
+  display: inline-block;
+  position: relative;
+}
+
+.offer-input:first-child {
+  margin-right: 20px;
+}
+
 .offer:before {
   content: '';
   width: 50%;
@@ -1231,19 +1255,15 @@ a {
 }
 
 .offer__subtitle {
-  fonr-size: 16px;
+  font-size: 16px;
   max-width: 250px;
   margin-bottom: 30px;
 }
 
 .offer__input {
   margin-bottom: 30px;
-  width: 240px;
+  width: 235px;
   height: 70px;
-}
-
-.offer__input:first-child {
-  margin-right: 10px;
 }
 
 .offer__input:focus {
@@ -1552,6 +1572,10 @@ a {
   display: flex;
 }
 
+.brif-input {
+  position: relative;
+}
+
 .brif__interview {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -1568,6 +1592,11 @@ a {
   width: 100%;
   max-width: 370px;
   margin-bottom: 15px;
+}
+
+.brif__input:focus {
+  border: 2px solid orange;
+  outline: none;
 }
 
 .brif__button {

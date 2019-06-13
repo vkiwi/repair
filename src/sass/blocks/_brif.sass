@@ -5,6 +5,8 @@
   background-repeat: repeat-y, no-repeat
   &-block
     display: flex
+  &-input
+    position: relative
   &__interview
     flex-basis: 50%
   &__form
@@ -15,6 +17,9 @@
     width: 100%
     max-width: 370px
     margin-bottom: 15px
+    &:focus
+      border: 2px solid orange
+      outline: none
   &__button
     // display: block
     height: 70px

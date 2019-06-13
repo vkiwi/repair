@@ -3,6 +3,11 @@
   background-size: contain
   background-position: center right
   position: relative
+  &-input
+    display: inline-block
+    position: relative
+    &:first-child
+      margin-right: 20px
   &:before
     content: ''
     width: 50%
@@ -22,16 +27,15 @@
     +bold
     text-align: left
   &__subtitle
-    fonr-size: 16px
+    font-size: 16px
     max-width: 250px
     margin-bottom: 30px
   &__input
     // margin-right: 14px
     margin-bottom: 30px
-    width: 240px
+    width: 235px
     height: 70px
-    &:first-child
-      margin-right: 10px
+    // margin-right: 5px
     &:focus
       border: 2px solid orange
       outline: none
