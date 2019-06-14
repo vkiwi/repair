@@ -30,8 +30,11 @@
 .interview
   padding-right: 70px
   &__title
+    font-size: 21px
+    margin-top: 45px
+    line-height: 1.4
+    margin-bottom: 45px
     margin-bottom: 50px
-    font-size: 22px
     +bold
   &__subtitle
     display: flex
@@ -43,14 +46,14 @@
     &__item
       display: flex
       align-items: center
-      margin-bottom: 25px
+      margin-bottom: 33px
       +bold
     &__counter
       display: inline-block
       margin-right: 30px
       text-align: center
       line-height: 35px
-      width: 35px
+      min-width: 35px
       height: 35px
       border: 2px solid $text-color
       border-radius: 50%
@@ -108,3 +111,7 @@
       flex-direction: column
     &__form
       margin-top: 80px
+@media (max-width: 321px)
+  .brif
+    &__form
+      padding-left: 0

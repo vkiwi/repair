@@ -31,11 +31,9 @@
     max-width: 250px
     margin-bottom: 30px
   &__input
-    // margin-right: 14px
     margin-bottom: 30px
     width: 235px
     height: 70px
-    // margin-right: 5px
     &:focus
       border: 2px solid orange
       outline: none
@@ -62,7 +60,7 @@
   .offer
     background-size: 100%
     &__input
-      width: 100%
+      width: 140%
       margin-bottom: 10px
     &__button
       font-size: 13px
@@ -78,4 +76,11 @@
     &__title
       font-size: 18px
       line-height: 1.4
-     
+    &__input
+      display: inline-block
+      position: relative
+      width: 140%
+@media (max-width: 321px)
+  .offer
+    &__input
+      width: 140%

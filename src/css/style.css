@@ -1091,7 +1091,7 @@ a {
   }
   .navbar__button {
     font-size: 12px;
-    padding: 15px 26px;
+    margin-left: 0;
   }
   .navbar__logo {
     width: 90px;
@@ -1174,6 +1174,10 @@ a {
   min-width: 200px;
   font-size: 14px;
   line-height: 1.8;
+}
+
+.hero-image {
+  margin-left: 26px;
 }
 
 @media (max-width: 1200px) {
@@ -1309,7 +1313,7 @@ a {
     background-size: 100%;
   }
   .offer__input {
-    width: 100%;
+    width: 140%;
     margin-bottom: 10px;
   }
   .offer__button {
@@ -1332,6 +1336,17 @@ a {
   .offer__title {
     font-size: 18px;
     line-height: 1.4;
+  }
+  .offer__input {
+    display: inline-block;
+    position: relative;
+    width: 140%;
+  }
+}
+
+@media (max-width: 321px) {
+  .offer__input {
+    width: 140%;
   }
 }
 
@@ -1364,8 +1379,15 @@ a {
   margin: auto;
 }
 
+@media (max-width: 768px) {
+  .portfolio {
+    padding-bottom: 50px;
+  }
+}
+
 .price__title {
   margin: auto;
+  margin-top: 50px;
   margin-bottom: 58px;
   max-width: 550px;
 }
@@ -1511,6 +1533,7 @@ a {
 }
 
 .steps__title {
+  max-width: 660px;
   margin: auto;
   margin-bottom: 59px;
 }
@@ -1612,8 +1635,11 @@ a {
 }
 
 .interview__title {
+  font-size: 21px;
+  margin-top: 45px;
+  line-height: 1.4;
+  margin-bottom: 45px;
   margin-bottom: 50px;
-  font-size: 22px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -1638,7 +1664,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 33px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -1648,7 +1674,7 @@ a {
   margin-right: 30px;
   text-align: center;
   line-height: 35px;
-  width: 35px;
+  min-width: 35px;
   height: 35px;
   border: 2px solid #333333;
   border-radius: 50%;
@@ -1730,6 +1756,12 @@ a {
   }
   .brif__form {
     margin-top: 80px;
+  }
+}
+
+@media (max-width: 321px) {
+  .brif__form {
+    padding-left: 0;
   }
 }
 
